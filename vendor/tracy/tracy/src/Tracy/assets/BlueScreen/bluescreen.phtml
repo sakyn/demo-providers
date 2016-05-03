@@ -356,7 +356,7 @@ $code = $exception->getCode() ? ' #' . $exception->getCode() : '';
 (function() {
 	if (!document.documentElement.classList) {
 		document.getElementById('tracy-bs-error').innerHTML += '<div id=tracy-bs-ie-warning>Warning: Tracy requires IE 10+<\/div>';
-		return;
+
 	}
 	<?php readfile(__DIR__ . '/../Dumper/dumper.js') ?>
 	<?php readfile(__DIR__ . '/bluescreen.js') ?>

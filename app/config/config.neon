@@ -3,6 +3,7 @@
 
 parameters:
 
+	GoogleGeoPoint: https://maps.google.com/maps/api/geocode/json
 
 php:
 	date.timezone: Europe/Prague
@@ -20,3 +21,8 @@ session:
 
 services:
 	router: App\RouterFactory::createRouter
+	- AddressProvidersForm
+	- GuzzleHttp\Client
+	- App\Services\JsonApiClient
+	- App\Services\ProvidersApi
+	- GoogleGeo\GoogleGeocoding(%GoogleGeoPoint%)
