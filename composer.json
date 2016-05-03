@@ -19,9 +19,10 @@
 		"nette/security": "^2.3",
 		"nette/utils": "^2.3",
 		"latte/latte": "^2.3",
-		"tracy/tracy": "^2.3"
+		"tracy/tracy": "^2.3",
+		"guzzlehttp/guzzle": "~6.0"
 	},
 	"require-dev": {
-		"nette/tester": "^1.6"
+		"nette/tester": "^1.7"
 	}
 }
